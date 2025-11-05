@@ -18,7 +18,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
       <!-- Project Overview -->
       <section class="mb-16">
-        <div class="bg-white/80 backdrop-blur-md shadow-md rounded-xl p-8 border border-blue-100">
+        <div class="bg-white/80 backdrop-blur- shadow-md rounded-xl p-8 border border-blue-100">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">About the Project</h2>
           <p class="text-gray-700 leading-relaxed mb-4">
             We are building a <strong>Serverless Event Gateway</strong> for Fiserv using AWS cloud-native technologies.
@@ -108,7 +108,7 @@
 </template>
 
 <script setup lang="ts">
-import { teamMembers, projectLogs, getLatestLogs, getMeetingLogs, getTotalHours } from '~/data/teamData';
+import { teamMembers, teamLeaders, projectLogs, getLatestLogs, getMeetingLogs, getTotalHours } from '~/data/teamData';
 
 const latestLogs = getLatestLogs(3);
 const totalLogs = projectLogs.length;

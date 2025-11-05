@@ -6,7 +6,8 @@ export interface TeamMember {
     bio: string;
     image: string;
     email: string;
-    github: string;
+    linkedIn: string;
+    github: string | null;
     skills: string[];
     bachelorThesis?: string;
 }

@@ -3,36 +3,39 @@ import type { TeamMember, ProjectLog } from '~/types';
 export const teamMembers: TeamMember[] = [
     {
         id: 7,
-        name: "Abd Salam",
-        role: "Security & IoT Specialist",
-        specialization: "Penetration Testing & Hardware Security",
-        bio: "Penetration tester focused on hardware security and IoT devices, especially those using Wi-Fi, Bluetooth and BLE. Passionate about research and automation in smart home environments.",
-        image: "/images/denis.jpeg",
+        name: "Abd Alrahman Saleh",
+        role: "Senior Software Engineer, PhD Student",
+        specialization: "JS/TS Expert, Angular Aficionado, Frontend Architect, Information Security, Applied Informatics",
+        bio: "Senior Software Engineer at Siemens Healthineers, PhD student focusing on cybersecurity in banking sector, co-founder of NorthExcel, experienced in software engineering and teaching in cryptography and cybersecurity.",
+        image: "/images/abdo.jpeg",
         email: "quantumleapcrew@gmail.com",
-        github: "thenisvan",
-        skills: ["IoT Security", "Penetration Testing", "BLE/WiFi", "Smart Home", "Hardware Security"],
+        github: null,
+        linkedIn: "https://www.linkedin.com/in/abdo-saleh",
+        skills: ["TypeScript", "Angular", "Frontend Architecture", "Information Security", "Cryptography"]
     },
     {
         id: 8,
-        name: "Tomas Sefcovic",
-        role: "Security & IoT Specialist",
-        specialization: "Penetration Testing & Hardware Security",
-        bio: "Penetration tester focused on hardware security and IoT devices, especially those using Wi-Fi, Bluetooth and BLE. Passionate about research and automation in smart home environments.",
-        image: "/images/denis.jpeg",
+        name: "Tomáš Šefčovič",
+        role: "Senior Technical Solution Lead, IT Director",
+        specialization: "Event Streaming, Cloud Architecture, Payment Systems, Scalable FinTech Solutions",
+        bio: "Senior Technical Solution Lead and IT Director with expertise in event streaming, cloud architecture, and payment systems. Leading scalable FinTech projects with strong focus on technical strategy and innovation.",
+        image: "/images/tomas.jpeg",
         email: "quantumleapcrew@gmail.com",
-        github: "thenisvan",
-        skills: ["IoT Security", "Penetration Testing", "BLE/WiFi", "Smart Home", "Hardware Security"],
+        github: null,
+        linkedIn: "https://www.linkedin.com/in/sefcovict",
+        skills: ["Event Streaming", "Cloud Architecture", "Payment Systems", "FinTech", "Technical Leadership"]
     },
     {
         id: 9,
-        name: "Matej Liptak",
-        role: "Security & IoT Specialist",
-        specialization: "Penetration Testing & Hardware Security",
-        bio: "Penetration tester focused on hardware security and IoT devices, especially those using Wi-Fi, Bluetooth and BLE. Passionate about research and automation in smart home environments.",
-        image: "/images/denis.jpeg",
+        name: "Matej Lipták",
+        role: "Co-founder & CEO",
+        specialization: "Startup Leadership, Business Development, Strategic Management, Marketing, International Trade",
+        bio: "Ambitious leader and entrepreneur, co-founder and CEO of Airlogy Labs, focused on startup growth, business strategy, and collaboration. Experienced in managing complex tasks, market analysis, and driving innovation.",
+        image: "/images/matej.jpeg",
         email: "quantumleapcrew@gmail.com",
-        github: "thenisvan",
-        skills: ["IoT Security", "Penetration Testing", "BLE/WiFi", "Smart Home", "Hardware Security"],
+        github: null,
+        linkedIn: "https://www.linkedin.com/in/matej-liptak-62001a140",
+        skills: ["Business Development", "Strategic Management", "Marketing", "International Trade"]
     },
     {
         id: 1,
@@ -43,6 +46,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/denis.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "thenisvan",
+        linkedIn: "https://www.linkedin.com/in/denis-ivan",
         skills: ["IoT Security", "Penetration Testing", "BLE/WiFi", "Smart Home", "Hardware Security"],
         bachelorThesis: "Security Threats and Vulnerabilities of IoT Devices with Physical Access"
     },
@@ -55,6 +59,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/peter.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "xfarkasp",
+        linkedIn: "https://www.linkedin.com/in/peter-farka%C5%A1-451496232",
         skills: ["C/C++", "Embedded Systems", "Microcontrollers", "3D Printing", "IoT"],
         bachelorThesis: "Modular Communication Service Managed by Microservices"
     },
@@ -67,6 +72,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/darius.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "HorvathDarius",
+        linkedIn: "https://www.linkedin.com/in/darius-horvath",
         skills: ["React", "Spring", "Full-Stack", "Systems Designer", "AWS", "Microservices"],
         bachelorThesis: "Digital Twin for Connected Automated Vehicle"
     },
@@ -79,6 +85,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/martin.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "dr-furious",
+        linkedIn: "https://www.linkedin.com/in/sivak-martin",
         skills: ["AI/ML", "Computer Vision", "PyTorch", "TensorFlow", "Deep Learning", "Medical Imaging"],
         bachelorThesis: "Histological Image Data Processing Using Computer Vision and Deep Neural Networks"
     },
@@ -91,6 +98,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/frederik.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "RikoAppDev",
+        linkedIn: "https://www.linkedin.com/in/frederik-duvac",
         skills: ["Full-Stack", "Databases", "Mobile Dev", "React", "Vue.js", "UX/UI", "Blockchain", "IoT"],
         bachelorThesis: "Application for Item Management"
     },
@@ -103,6 +111,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/adrian.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "K-o-m-A",
+        linkedIn: "https://www.linkedin.com/in/adrian-komanek-3a988822b",
         skills: ["DevOps", "Kubernetes", "AWS", "Terraform", "Docker", "CI/CD", "Grafana"],
         bachelorThesis: "Virtual Infrastructure Management Based on Infrastructure as Code"
     }

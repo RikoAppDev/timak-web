@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    --color-aws-orange: #FF9900;
+    --color-aws-navy: #252F3E;
+
+    --color-fiserv-orange: #FF6600;
+    --color-fiserv-blue: #2E8BC9;
+
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-display: "Oswald", sans-serif;
+}

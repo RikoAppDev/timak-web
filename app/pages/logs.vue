@@ -1,8 +1,7 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
     <!-- Header -->
-    <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 relative">
-      <BackgroundLogo />
+    <div class="-bg-linear-75 from-aws-orange/90 via-aws-navy/0 to-fiserv-orange/90 text-aws-navy py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <h1 class="text-4xl md:text-5xl font-bold mb-4">Project Activity Logs</h1>
         <p class="text-xl opacity-90">Complete semester work history - Fall 2025</p>
@@ -16,7 +15,7 @@
         <div class="flex flex-wrap gap-3">
           <button
               @click="selectedType = null"
-              :class="selectedType === null ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'"
+              :class="selectedType === null ? 'bg-fiserv-orange/90 text-white' : 'bg-aws-navy/10 text-aws-navy'"
               class="px-4 py-2 rounded-lg font-medium transition-colors"
           >
             All ({{ projectLogs.length }})
@@ -25,7 +24,7 @@
               v-for="type in logTypes"
               :key="type.value"
               @click="selectedType = type.value"
-              :class="selectedType === type.value ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-700'"
+              :class="selectedType === type.value ? 'bg-fiserv-orange/90 text-white' : 'bg-aws-navy/10 text-aws-navy'"
               class="px-4 py-2 rounded-lg font-medium transition-colors"
           >
             {{ type.icon }} {{ type.label }} ({{ getCountByType(type.value) }})
@@ -35,20 +34,20 @@
 
       <!-- Stats Summary -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-blue-500">
-          <div class="text-3xl font-bold text-blue-600">{{ filteredLogs.length }}</div>
+        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-aws-navy">
+          <div class="text-3xl font-bold text-aws-navy">{{ filteredLogs.length }}</div>
           <div class="text-gray-600 text-sm">Total Activities</div>
         </div>
-        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-purple-500">
-          <div class="text-3xl font-bold text-purple-600">{{ totalFilteredHours }}</div>
+        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-aws-orange">
+          <div class="text-3xl font-bold text-aws-orange">{{ totalFilteredHours }}</div>
           <div class="text-gray-600 text-sm">Total Hours</div>
         </div>
-        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-green-500">
-          <div class="text-3xl font-bold text-green-600">{{ averageHours }}</div>
+        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-fiserv-blue">
+          <div class="text-3xl font-bold text-fiserv-blue">{{ averageHours }}</div>
           <div class="text-gray-600 text-sm">Avg Hours/Task</div>
         </div>
-        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-orange-500">
-          <div class="text-3xl font-bold text-orange-600">{{ dateRange }}</div>
+        <div class="bg-white/80 backdrop-blur-md shadow-md p-6 rounded-xl text-center border-t-4 border-fiserv-orange">
+          <div class="text-3xl font-bold text-fiserv-orange">{{ dateRange }}</div>
           <div class="text-gray-600 text-sm">Time Span</div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-blue-100">
+  <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-b-fiserv-orange/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo Section -->
@@ -7,41 +7,37 @@
           <img
               src="/images/logo.png"
               alt="Quantum Leap Crew Logo"
-              class="w-14 h-14 object-contain"
+              class="size-28 object-contain"
               @error="handleLogoError"
           />
-          <div>
-            <div class="text-md lg:text-lg font-medium text-gray-900">Quantum Leap Crew</div>
-            <div class="text-xs text-gray-500">Team 17</div>
-          </div>
         </NuxtLink>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center gap-2 lg:gap-6 text-sm lg:text-base">
+        <div class="hidden md:flex text-aws-navy items-center gap-2 lg:gap-6 text-sm lg:text-base">
           <NuxtLink
               to="/"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50"
-              active-class="text-blue-600 bg-blue-50"
+              class="text-aws-navy font-medium  transition-colors px-3 py-2 rounded-lg hover:bg-fiserv-orange/40"
+              active-class="bg-aws-orange/15"
           >
             🏠 Home
           </NuxtLink>
           <NuxtLink
               to="/logs"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50"
-              active-class="text-blue-600 bg-blue-50"
+              class="text-aws-navy font-medium transition-colors px-3 py-2 rounded-lg hover:bg-fiserv-orange/40"
+              active-class="bg-aws-orange/15"
           >
             📊 Activity Logs
           </NuxtLink>
           <NuxtLink
               to="/docs"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50"
-              active-class="text-blue-600 bg-blue-50"
+              class="text-aws-navy font-medium transition-colors px-3 py-2 rounded-lg hover:bg-fiserv-orange/40"
+              active-class="bg-aws-orange/15"
           >
             📚 Documentation
           </NuxtLink>
           <a
               href="mailto:quantumleapcrew@gmail.com"
-              class="px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-md"
+              class="px-4 py-2 bg-fiserv-orange/90 hover:bg-fiserv-orange/80 text-white rounded-lg transition-all font-medium shadow-md"
           >
             📧 Contact
           </a>
@@ -71,30 +67,30 @@
           <NuxtLink
               to="/"
               @click="mobileMenuOpen = false"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50"
-              active-class="text-blue-600 bg-blue-50"
+              class="text-aws-navy  font-medium transition-colors px-3 py-2 rounded-lg hover:bg-fiserv-orange/40"
+              active-class="bg-aws-orange/15"
           >
             🏠 Home
           </NuxtLink>
           <NuxtLink
               to="/logs"
               @click="mobileMenuOpen = false"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50"
-              active-class="text-blue-600 bg-blue-50"
+              class="text-aws-navy  font-medium transition-colors px-3 py-2 rounded-lg hover:bg-fiserv-orange/40"
+              active-class="bg-aws-orange/15"
           >
             📊 Activity Logs
           </NuxtLink>
           <NuxtLink
               to="/docs"
               @click="mobileMenuOpen = false"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors px-3 py-2 rounded-lg hover:bg-blue-50"
-              active-class="text-blue-600 bg-blue-50"
+              class="text-aws-navy  font-medium transition-colors px-3 py-2 rounded-lg hover:bg-fiserv-orange/40"
+              active-class="bg-aws-orange/15"
           >
             📚 Documentation
           </NuxtLink>
           <a
               href="mailto:quantumleapcrew@gmail.com"
-              class="text-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all font-medium shadow-md"
+              class="text-center px-4 py-2 bg-fiserv-orange/90 hover:bg-fiserv-orange/80 text-white rounded-lg hover:from-aws-navy/90 hover:via-fiserv-blue/90 hover:to-fiserv-orange/90 transition-all font-medium shadow-md"
           >
             📧 Contact
           </a>
@@ -121,7 +117,7 @@ const handleLogoError = (e: Event) => {
   const parent = target.parentElement;
   if (parent) {
     const fallbackDiv = document.createElement('div');
-    fallbackDiv.className = 'w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg';
+    fallbackDiv.className = 'w-10 h-10 bg-gradient-to-br from-aws-navy via-fiserv-blue to-fiserv-orange text-white rounded-lg hover:from-aws-navy/90 hover:via-fiserv-blue/90 hover:to-fiserv-orange/90 flex items-center justify-center shadow-lg';
     fallbackDiv.innerHTML = '<span class="text-white font-bold text-xl">⚡</span>';
     parent.insertBefore(fallbackDiv, target);
   }

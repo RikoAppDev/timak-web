@@ -23,7 +23,7 @@
           <span
               v-for="attendee in log.attendees"
               :key="attendee"
-              class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs"
+              class="px-2 py-1 bg-fiserv-orange text-white rounded text-xs"
           >
             {{ attendee }}
           </span>
@@ -80,19 +80,19 @@ const typeLabels: Record<ProjectLog['type'], string> = {
 };
 
 const typeClasses: Record<ProjectLog['type'], string> = {
-  meeting: 'border-purple-500 bg-purple-50',
-  development: 'border-blue-500 bg-blue-50',
-  documentation: 'border-green-500 bg-green-50',
-  deployment: 'border-orange-500 bg-orange-50',
-  testing: 'border-red-500 bg-red-50'
+  meeting: 'border-aws-orange bg-aws-orange/20',
+  development: 'border-aws-navy bg-aws-navy/20',
+  documentation: 'border-fiserv-blue bg-fiserv-blue/20',
+  deployment: 'border-fiserv-orange bg-fiserv-orange/20',
+  testing: 'border-green-500 bg-green-50'
 };
 
 const typeColors: Record<ProjectLog['type'], string> = {
-  meeting: 'text-purple-600',
-  development: 'text-blue-600',
-  documentation: 'text-green-600',
-  deployment: 'text-orange-600',
-  testing: 'text-red-600'
+  meeting: 'text-aws-orange',
+  development: 'text-aws-navy',
+  documentation: 'text-fiserv-blue',
+  deployment: 'text-fiserv-orange',
+  testing: 'text-green-600'
 };
 
 // Computed properties come after regular declarations

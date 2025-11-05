@@ -34,7 +34,7 @@ export const teamMembers: TeamMember[] = [
         image: "/images/darius.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "HorvathDarius",
-        skills: ["Full-Stack", "Cloud Architecture", "AWS", "Vue.js", "Node.js", "PostgreSQL"],
+        skills: ["React", "Spring", "Full-Stack", "Systems Designer", "AWS", "Microservices"],
         bachelorThesis: "Digital Twin for Connected Automated Vehicle"
     },
     {

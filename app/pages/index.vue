@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gradient-to-br from-fiserv-blue/15 via-white to-aws-navy/15">
     <!-- Hero Section -->
-    <div class="-bg-linear-75 from-aws-orange/90 via-aws-navy/0 to-fiserv-orange/90 text-aws-navy pb-20">
+    <div class="-bg-linear-75 from-aws-orange/90 via-aws-navy/1 to-fiserv-orange/90 text-aws-navy pb-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col justify-center items-center">
         <BackgroundLogo/>
         <p class="text-xl md:text-2xl mb-2">Cloud-Native Event Gateway Development</p>

@@ -5,8 +5,8 @@
         <!-- Logo Section -->
         <NuxtLink to="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <img
-              src="/images/logo.png"
-              alt="Quantum Leap Crew Logo"
+              src="/images/logo.svg"
+              alt="AWSENGERS logo"
               class="size-28 object-contain"
               @error="handleLogoError"
           />

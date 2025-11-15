@@ -55,7 +55,7 @@ export const teamMembers: TeamMember[] = [
         name: "Peter Farkaš",
         role: "Embedded Systems Developer",
         specialization: "C++ & Low-Level Programming",
-        bio: "C++ developer focused on data transfer implementation in meteorology with expertise in embedded systems and low-level programming. Enthusiast of 3D printing with notable projects including functional Iron Man suit.",
+        bio: "C++ developer straight from Asgard focused on data transfer implementation in mythology with expertise in embedded systems and low-level programming. Enthusiast of 3D printing with notable projects including functional Iron Man suit.",
         image: "/images/peter.jpeg",
         email: "quantumleapcrew@gmail.com",
         github: "xfarkasp",
